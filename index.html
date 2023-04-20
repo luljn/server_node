@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test ajout db</title>
+    </head>
+
+    <body>
+
+        <!--header>
+            <nav>
+                <button><a href = "index.php">Accueil</a></button>
+                <button><a href = "administration.php">Espace Administrateur</a></button>
+            </nav>
+        </header-->
+
+        <main style = "min-height: 100%; position: relative; padding-bottom: 100px;">
+            <h1 style = "text-align: center; font-size: 100px;">Ajouter un produit</h1>
+            <h2 style = "text-align: center; font-size: 50px;">Entrez les données du produit</h2>
+            <form action = "localhost:3000/api/add/products" method = "post">
+            <fieldset>
+                <legend>Nom du produit</legend>
+                <label for = "nom">nom</label> : 
+                <input type = "text" name = "nom" id = "nom" placeholder = "Ex. : smartRTX" size = "50" maxlength = "50">
+            </fieldset>
+            <fieldset>
+                <legend>Prix du produit</legend>
+                <label for = "prix">prix</label> : 
+                <input type = "text" name = "prix" id = "prix" size = "50" maxlength = "10">
+            </fieldset>
+            <fieldset>
+                <legend>Description du produit</legend>
+                <label for = "description">description</label> : 
+                <input type = "text" name = "description" id = "description" size = "50" maxlength = "100">
+            </fieldset>
+            <fieldset>
+                <legend>Le produit est-il en solde ?</legend>
+                <label for = "solde">solde</label> : 
+                <input type = "text" name = "solde" id = "solde" placeholder = "0 ou 1" size = "50" maxlength = "10">
+            </fieldset>
+            <fieldset>
+                <legend>Quel est le chemin d'accès vers l'image du produit ?</legend>
+                <label for = "urlImage">urlImage</label> : 
+                <input type = "text" name = "urlImage" id = "urlImage" placeholder = "Ex. : Produits/p1.jpg" size = "50" maxlength = "100">
+            </fieldset>
+            <button type = "submit">Enregistrer</button>
+        </form>
+        </main>
+
+    </body>
+
+</html>
