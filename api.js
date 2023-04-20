@@ -22,7 +22,7 @@ api.use(
 
     express.urlencoded({
         
-        extended : false,
+        extended : true,
     })
 );
 
@@ -44,12 +44,13 @@ api.post((req, res, next) =>{
     console.log('Objet cree !');
 });*/
 
-api.post('/api/add/products', (req, res) =>{
+/*
+api.post('/api/products/add', (req, res) =>{
 
     console.log(req.body);
     //res.status(201).send();
     res.json({message : 'Objet cree !'});
-});
+});*/
 
 api.get('/api/start', (req, res, next) =>{
 
@@ -65,7 +66,6 @@ api.get('/api/start', (req, res, next) =>{
 
 // Users informations principal route.
 api.use('/api/users', usersRouter);
-//api.use(`/api/users/{id}`, usersRouter);
 
 // Products informations principal route.
 api.use('/api/products', productsRouter);
