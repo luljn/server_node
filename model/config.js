@@ -4,7 +4,7 @@ const config = {
         host: "localhost",
         user: "root",
         password: "",
-        database: "api_rest_test",
+        database: "general_database",
     }
 };
 
