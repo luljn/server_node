@@ -24,6 +24,7 @@ function generateToken(longueur){
 };
 
 // We generate a token of length 12.
+//var token = setInterval(generateToken(12), 48*60*60*100);
 var token = generateToken(12);
 
 // We put the token in the file token.txt (Client side)
