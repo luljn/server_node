@@ -32,14 +32,14 @@
 
 * Routes.
 
-- getting started : "localhost:3000/api/start".
+- getting started : "localhost:3000/api/token/start".
 
 * Example for CRUD operations on the table "students" (in "general_database" database).
             
                                    Use the following routes.
 
-- To get all the students : localhost:3000/api/students
-- To get a specific student : localhost:3000/api/students/id ('id' is the identifier of the student you want to get)
-- To add a new student in the database : localhost:3000/api/students/add (you have to give the attributes of the student in  JSON format)
-- To delete a student from the database : localhost:3000/api/students/delete/name ('name' is the name of the student you want to delete from the database)
-- To modify a student : localhost:3000/api/students/modify/id ('id' is the identifier of the student you want to modify, and you have to give the new attributes of the student in  JSON format)
+- To get all the students : localhost:3000/api/token/students
+- To get a specific student : localhost:3000/api/token/students/id ('id' is the identifier of the student you want to get)
+- To add a new student in the database : localhost:3000/api/token/students/add (you have to give the attributes of the student in  JSON format)
+- To delete a student from the database : localhost:3000/api/token/students/delete/name ('name' is the name of the student you want to delete from the database)
+- To modify a student : localhost:3000/api/token/students/modify/id ('id' is the identifier of the student you want to modify, and you have to give the new attributes of the student in  JSON format)
