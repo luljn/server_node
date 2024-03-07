@@ -1,0 +1,18 @@
+{
+  "name": "server_node",
+  "version": "1.0.0",
+  "description": "serveur Node.js pour la construction et l'utilisation de l'api (sous Express).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-myconnection": "^1.0.4",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.3"
+  }
+}
